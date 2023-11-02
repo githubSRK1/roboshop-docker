@@ -12,10 +12,10 @@ services:
     container_name: mongodb
     networks:
       - roboshop
-    volumes:
-    - source: mongodb
-      target: /data/db
-      type: volume
+    # volumes:
+    # - source: mongodb
+    #   target: /data/db
+    #   type: volume
   catalogue:
     image: joindevops/catalogue:v1
     container_name: catalogue
@@ -53,10 +53,10 @@ services:
     container_name: mysql
     networks:
       - roboshop
-    volumes:
-    - source: mysql
-      target: /var/lib/mysql
-      type: volume
+    # volumes:
+    # - source: mysql
+    #   target: /var/lib/mysql
+    #   type: volume
   # shipping:
   #   image: joindevops/shipping:v1
   #   container_name: shipping
